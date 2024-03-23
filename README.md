@@ -1,5 +1,34 @@
 # Game-Programmer-Portfolio
+
 This is a game programmer portfolio template that you can use and edit for your own professional portfolio.
+
+> This project is made with Vite + React.
+
+---
+
+## Getting Started
+
+To setup this project on your system, you need
+### Installation
+* **Git**
+* **Node.js 20.11.1**
+* **Npm 10.5.0**
+
+Then run these following commands on your Terminal or Command prompt(CMD)
+### Run
+``` bash
+$ git clone https://github.com/chrisrobidas/Game-Programmer-Portfolio.git
+
+$ cd Game-Programmer-Portfolio
+
+$ npm install
+
+$ npm run dev
+```
+
+[Go top](#portfolio-template)
+
+--------------------------------------------------------------------------------------------------------------
 
 # React + TypeScript + Vite
 
