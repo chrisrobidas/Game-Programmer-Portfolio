@@ -1,0 +1,24 @@
+#navbar-background {
+    width: 100%;
+    background-color: #121212;
+    position: absolute;
+}
+
+#navbar-content {
+    display: flex;
+    max-width: 1320px;
+    min-width: 350px;
+    margin: 0 auto;
+    background-color: #121212 !important;
+}
+
+.logo {
+    width: 45px;
+}
+
+.logo-link {
+}
+
+.social-icon {
+    width: 45px;
+}

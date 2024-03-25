@@ -1,0 +1,19 @@
+#footer-background {
+    background-color: #121212;
+}
+
+#footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  max-width: 1320px;
+  min-width: 350px;
+  margin: 0 auto;
+  background-color: #121212;
+}
+
+.tech-used {
+    color: #6b6b6b;
+}
