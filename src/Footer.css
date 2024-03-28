@@ -1,5 +1,5 @@
 #footer-background {
-    background-color: #121212;
+  background-color: #121212;
 }
 
 #footer-content {
@@ -9,11 +9,21 @@
   justify-content: center;
   height: 100px;
   max-width: 1320px;
-  min-width: 350px;
+  min-width: 280px;
   margin: 0 auto;
   background-color: #121212;
 }
 
 .tech-used {
-    color: #6b6b6b;
+  color: #6b6b6b;
+}
+
+.creator-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.current-year {
+  color: #91FE3C;
+  margin-left: 4px;
 }

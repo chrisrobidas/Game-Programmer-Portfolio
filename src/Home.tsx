@@ -1,25 +1,31 @@
-import { useTranslation } from 'react-i18next';
-import Footer from './Footer';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import Navbar from './Navbar';
+import Portfolio from './Portfolio';
+import About from './About';
+import Contact from './Contact';
+import Footer from './Footer';
 import './Home.css';
 
-function App() {
-  const { t, i18n } = useTranslation(['home']);
-
+function Home() {
   return (
     <>
       <Navbar/>
       <div id='content'>
-        <h1 className='programmer-name'>
-          Christopher Robidas
-        </h1>
-        <h2>
-          Game Programmer
-        </h2>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Portfolio/>} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/contact' element={<Contact/>} />
+          </Routes>
+        </BrowserRouter>
       </div>
       <Footer/>
     </>
   )
 }
 
-export default App;
+export default Home;

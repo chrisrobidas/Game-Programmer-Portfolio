@@ -2,16 +2,19 @@ import { useTranslation } from 'react-i18next';
 import './Footer.css';
 
 function Footer() {
-  const { t, i18n } = useTranslation(['home']);
+  const { t } = useTranslation(['footer']);
   
   return (
     <div id='footer-background'>
       <div id='footer-content'>
-        <div>
-          Christopher Robidas ©2024
+        <div className='creator-line'>
+          Christopher Robidas
+          <div className='current-year'>
+            ©2024
+          </div>
         </div>
         <div className='tech-used'>
-          Made with Vite + React + TypeScript
+          {t('footer.made-with')} Vite + React + TypeScript
         </div>
       </div>
     </div>

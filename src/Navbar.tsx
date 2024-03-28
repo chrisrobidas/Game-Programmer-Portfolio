@@ -1,33 +1,33 @@
 import { useTranslation } from 'react-i18next';
+import {
+  Container,
+  Nav,
+  Navbar as BootstrapNavbar,
+  NavDropdown
+} from 'react-bootstrap';
 import './Navbar.css';
 
 function Navbar() {
-  const { t, i18n } = useTranslation(['home']);
-  
+  const { t, i18n } = useTranslation(['portfolio']);
+  // TODO FIX HEIGHT OF NAVBAR WHEN COLLAPSED
   return (
-    <div id='navbar-background'>
-      <nav id='navbar-content' className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <a className='navbar-brand logo-link' href="/">
+      <BootstrapNavbar id='navbar-content' data-bs-theme="dark" sticky="top" expand="lg">
+        <Container>
+          <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
+          <BootstrapNavbar.Brand href="/" className='logo-wrapper'>
             <img className='logo' src="logo192.png" alt="CR"/>
-          </a>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="/">Portfolio</a>
-              <a className="nav-link" href="/about">About</a>
-              <a className="nav-link" href="/contact">Contact</a>
-              <div className='nav-item dropdown' role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <a className="nav-link dropdown-toggle">Language</a>
-                <div className="dropdown-menu">
-                  <a className="dropdown-item" onClick={() => i18n.changeLanguage('french')}>French</a>
-                  <a className="dropdown-item" onClick={() => i18n.changeLanguage('english')}>English</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </BootstrapNavbar.Brand>
+          <BootstrapNavbar.Collapse id="basic-navbar-nav">
+            <Nav activeKey={location.pathname} className="me-auto">
+              <Nav.Link href="/">Portfolio</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
+              <NavDropdown title="Language" id="dropdown-content">
+                <NavDropdown.Item onClick={() => i18n.changeLanguage('french')}>French</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => i18n.changeLanguage('english')}>English</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </BootstrapNavbar.Collapse>
           <div>
             <a href="https://www.linkedin.com/in/christopher-robidas-a661241a2/">
               <img className='social-icon' src="linkedin-logo.png" alt="Linkedin logo"/>
@@ -37,10 +37,8 @@ function Navbar() {
             </a>
             <button>Resume</button>
           </div>
-        </div>
-      </nav>
-    </div>
-    
+        </Container>
+      </BootstrapNavbar>
   );
 }
 
