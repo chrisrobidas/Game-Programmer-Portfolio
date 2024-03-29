@@ -8,10 +8,9 @@ import {
 import './Navbar.css';
 
 function Navbar() {
-  const { t, i18n } = useTranslation(['portfolio']);
-  // TODO FIX HEIGHT OF NAVBAR WHEN COLLAPSED
+  const { t, i18n } = useTranslation(['navbar']);
   return (
-      <BootstrapNavbar id='navbar-content' data-bs-theme="dark" sticky="top" expand="lg">
+      <BootstrapNavbar id='navbar-content' data-bs-theme="dark" expand="lg">
         <Container>
           <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
           <BootstrapNavbar.Brand href="/" className='logo-wrapper'>
@@ -19,23 +18,26 @@ function Navbar() {
           </BootstrapNavbar.Brand>
           <BootstrapNavbar.Collapse id="basic-navbar-nav">
             <Nav activeKey={location.pathname} className="me-auto">
-              <Nav.Link href="/">Portfolio</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-              <NavDropdown title="Language" id="dropdown-content">
-                <NavDropdown.Item onClick={() => i18n.changeLanguage('french')}>French</NavDropdown.Item>
-                <NavDropdown.Item onClick={() => i18n.changeLanguage('english')}>English</NavDropdown.Item>
+              <Nav.Link href="/">{t('navbar.portfolio')}</Nav.Link>
+              <Nav.Link href="/about">{t('navbar.about')}</Nav.Link>
+              <Nav.Link href="/contact">{t('navbar.contact')}</Nav.Link>
+              <NavDropdown title={t('navbar.language')} id="dropdown-content">
+                <NavDropdown.Item onClick={() => i18n.changeLanguage('french')}>{t('navbar.french')}</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => i18n.changeLanguage('english')}>{t('navbar.english')}</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </BootstrapNavbar.Collapse>
-          <div>
+          <div className='right-buttons'>
             <a href="https://www.linkedin.com/in/christopher-robidas-a661241a2/">
               <img className='social-icon' src="linkedin-logo.png" alt="Linkedin logo"/>
             </a>
-            <a className='m-2' href="https://github.com/chrisrobidas">
+            <a className='middle-margin' href="https://github.com/chrisrobidas">
               <img className='social-icon' src="github-logo.png" alt="GitHub logo"/>
             </a>
-            <button>Resume</button>
+            <button className='resume-button' onClick={() => window.open(i18n.language === 'french' ? 'Christopher_Robidas_CV_2024.pdf' : 'Christopher_Robidas_Resume_2024.pdf')}>
+            {t('navbar.resume')}
+              <img className='download-image' src='download.png' alt='Download image'/>
+            </button>
           </div>
         </Container>
       </BootstrapNavbar>

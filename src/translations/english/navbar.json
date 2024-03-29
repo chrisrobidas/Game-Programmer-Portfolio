@@ -1,5 +1,11 @@
 {
-    "about": {
-        "hello": "Hello2"
+    "navbar": {
+        "portfolio": "Portfolio",
+        "about": "About",
+        "contact": "Contact",
+        "language": "Language",
+        "french": "French",
+        "english": "English",
+        "resume": "Resume"
     }
 }

@@ -6,6 +6,8 @@ function Portfolio() {
 
   return (
     <>
+      <div className='empty-space'/>
+      <br/>
       <h1 className='programmer-name'>
         Christopher Robidas
       </h1>
@@ -14,6 +16,7 @@ function Portfolio() {
       </h2>
       <div>{t("portfolio.hello")}</div>
       <div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div><div>{t("portfolio.hello")}</div>
+      <br/>
     </>
   )
 }
