@@ -38,7 +38,7 @@ function Navbar() {
         <Offcanvas data-bs-theme="dark" className='offcanvas-background' show={show} onHide={handleClose} placement="start">
           <Offcanvas.Header closeButton>
             <Offcanvas.Title className='offcanvas-title'>
-              Christopher Robidas
+              CHRISTOPHER ROBIDAS
             </Offcanvas.Title>
           </Offcanvas.Header>
           <hr className='offcanvas-hr' />

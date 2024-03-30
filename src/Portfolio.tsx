@@ -15,7 +15,7 @@ function Portfolio() {
         <div id='home' className='empty-space' />
         <div className='welcome-box'>
           <h1 className='programmer-name'>
-            Christopher Robidas
+            CHRISTOPHER ROBIDAS
           </h1>
           <h2>
             {t("portfolio.game-programmer")}

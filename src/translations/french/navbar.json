@@ -1,12 +1,12 @@
 {
     "navbar": {
-        "home": "Accueil",
-        "portfolio": "Portfolio",
-        "about": "À propos",
-        "contact": "Contact",
-        "language": "Langue",
-        "french": "Français",
-        "english": "Anglais",
+        "home": "ACCUEIL",
+        "portfolio": "PORTFOLIO",
+        "about": "À PROPOS",
+        "contact": "CONTACT",
+        "language": "LANGUE",
+        "french": "FRANÇAIS",
+        "english": "ANGLAIS",
         "resume": "CV"
     }
 }

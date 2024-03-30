@@ -1,12 +1,12 @@
 {
     "navbar": {
-        "home": "Home",
-        "portfolio": "Portfolio",
-        "about": "About",
-        "contact": "Contact",
-        "language": "Language",
-        "french": "French",
-        "english": "English",
-        "resume": "Resume"
+        "home": "HOME",
+        "portfolio": "PORTFOLIO",
+        "about": "ABOUT",
+        "contact": "CONTACT",
+        "language": "LANGUAGE",
+        "french": "FRENCH",
+        "english": "ENGLISH",
+        "resume": "RESUME"
     }
 }
