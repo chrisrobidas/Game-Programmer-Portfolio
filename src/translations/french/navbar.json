@@ -1,5 +1,6 @@
 {
     "navbar": {
+        "home": "Accueil",
         "portfolio": "Portfolio",
         "about": "À propos",
         "contact": "Contact",

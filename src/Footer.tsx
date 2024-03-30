@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   const { t } = useTranslation(['footer']);
-  
+
   return (
     <div id='footer-background'>
       <div id='footer-content'>

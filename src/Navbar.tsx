@@ -3,44 +3,68 @@ import {
   Container,
   Nav,
   Navbar as BootstrapNavbar,
-  NavDropdown
+  NavDropdown,
+  Offcanvas
 } from 'react-bootstrap';
+import { useState } from 'react';
 import './Navbar.css';
 
 function Navbar() {
   const { t, i18n } = useTranslation(['navbar']);
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-      <BootstrapNavbar id='navbar-content' data-bs-theme="dark" expand="lg">
-        <Container>
-          <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
-          <BootstrapNavbar.Brand href="/" className='logo-wrapper'>
-            <img className='logo' src="logo192.png" alt="CR"/>
-          </BootstrapNavbar.Brand>
-          <BootstrapNavbar.Collapse id="basic-navbar-nav">
-            <Nav activeKey={location.pathname} className="me-auto">
-              <Nav.Link href="/">{t('navbar.portfolio')}</Nav.Link>
-              <Nav.Link href="/about">{t('navbar.about')}</Nav.Link>
-              <Nav.Link href="/contact">{t('navbar.contact')}</Nav.Link>
-              <NavDropdown title={t('navbar.language')} id="dropdown-content">
+    <BootstrapNavbar id='navbar-content' data-bs-theme="dark" expand="lg" onToggle={handleShow} expanded={false}>
+      <Container>
+        <BootstrapNavbar.Toggle />
+        <BootstrapNavbar.Brand href="#home" className='logo-wrapper'>
+          <img className='logo' src="logo192.png" alt="CR" />
+        </BootstrapNavbar.Brand>
+        <BootstrapNavbar.Collapse>
+          <Nav className='navbar-content'>
+            <Nav.Link active={false} href="#home">{t('navbar.home')}</Nav.Link>
+            <Nav.Link active={false} href="#portfolio">{t('navbar.portfolio')}</Nav.Link>
+            <Nav.Link active={false} href="#about">{t('navbar.about')}</Nav.Link>
+            <Nav.Link active={false} href="#contact">{t('navbar.contact')}</Nav.Link>
+            <NavDropdown title={t('navbar.language')} id="dropdown-content">
+              <NavDropdown.Item onClick={() => i18n.changeLanguage('french')}>{t('navbar.french')}</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => i18n.changeLanguage('english')}>{t('navbar.english')}</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </BootstrapNavbar.Collapse>
+        <Offcanvas data-bs-theme="dark" className='offcanvas-background' show={show} onHide={handleClose} placement="start">
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title className='offcanvas-title'>
+              Christopher Robidas
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <hr className='offcanvas-hr' />
+          <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link active={false} href="#home" onClick={handleClose}>{t('navbar.home')}</Nav.Link>
+              <Nav.Link active={false} href="#portfolio" onClick={handleClose}>{t('navbar.portfolio')}</Nav.Link>
+              <Nav.Link active={false} href="#about" onClick={handleClose}>{t('navbar.about')}</Nav.Link>
+              <Nav.Link active={false} href="#contact" onClick={handleClose}>{t('navbar.contact')}</Nav.Link>
+              <NavDropdown title={t('navbar.language')} id="offcanvas-dropdown-content">
                 <NavDropdown.Item onClick={() => i18n.changeLanguage('french')}>{t('navbar.french')}</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => i18n.changeLanguage('english')}>{t('navbar.english')}</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-          </BootstrapNavbar.Collapse>
-          <div className='right-buttons'>
-            <a href="https://www.linkedin.com/in/christopher-robidas-a661241a2/">
-              <img className='social-icon' src="linkedin-logo.png" alt="Linkedin logo"/>
-            </a>
-            <a className='middle-margin' href="https://github.com/chrisrobidas">
-              <img className='social-icon' src="github-logo.png" alt="GitHub logo"/>
-            </a>
-            <button className='resume-button' onClick={() => window.open(i18n.language === 'french' ? 'Christopher_Robidas_CV_2024.pdf' : 'Christopher_Robidas_Resume_2024.pdf')}>
+          </Offcanvas.Body>
+        </Offcanvas>
+        <div className='right-buttons cursor-pointer'>
+          <img className='social-icon' src="linkedin-logo.png" alt="Linkedin logo" onClick={() => window.open("https://www.linkedin.com/in/christopher-robidas-a661241a2/")} />
+          <img className='social-icon middle-margin cursor-pointer' src="github-logo.png" alt="GitHub logo" onClick={() => window.open("https://github.com/chrisrobidas")} />
+          <button className='resume-button' onClick={() => window.open(i18n.language === 'french' ? 'Christopher_Robidas_CV_2024.pdf' : 'Christopher_Robidas_Resume_2024.pdf')}>
             {t('navbar.resume')}
-              <img className='download-image' src='download.png' alt='Download image'/>
-            </button>
-          </div>
-        </Container>
-      </BootstrapNavbar>
+            <img className='download-image' src='download.png' alt='Download image' />
+          </button>
+        </div>
+      </Container>
+    </BootstrapNavbar>
   );
 }
 
