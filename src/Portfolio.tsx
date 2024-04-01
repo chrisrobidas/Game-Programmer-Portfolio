@@ -1,8 +1,35 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Portfolio.css';
 
 function Portfolio() {
-  const { t, i18n } = useTranslation(['portfolio']);
+  const { t } = useTranslation(['portfolio']);
+
+  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov'])
+  const [isVideo, setIsVideo] = useState<boolean[]>([true])
+  const [enableControls, setEnableControls] = useState<boolean[]>([true])
+
+  function SetMedia(index: number, src: string, showVideo: boolean = false, shouldEnableControls: boolean = false) {
+    const newIsVideo = [...isVideo]
+    newIsVideo[index] = showVideo
+    setIsVideo(newIsVideo)
+
+    const newEnableControls = [...enableControls]
+    newEnableControls[index] = shouldEnableControls
+    setEnableControls(newEnableControls)
+
+    if (newIsVideo[index]) {
+      const newVideoSrc = [...videoSrc]
+      newVideoSrc[index] = src
+      setVideoSrc(newVideoSrc)
+    }
+    else {
+      const newImgSrc = [...imgSrc]
+      newImgSrc[index] = src
+      setImgSrc(newImgSrc)
+    }
+  }
 
   return (
     <>
@@ -30,13 +57,69 @@ function Portfolio() {
           </h2>
           <hr />
           <div>
-            My project #1
+            <h3>
+              T.E.S.T. : Tigre en situation triche
+            </h3>
+            <div className='portfolio-section'>
+              <div className='portfolio-section-box'>
+                {isVideo[0] &&
+                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                    <source src={videoSrc[0]} type="video/mp4" />
+                  </video>}
+                {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="TEST 1" />}
+                <div className='portfolio-medias'>
+                  <img className='portfolio-media' src="TEST-1.png" alt="TEST 1" onClick={() => SetMedia(0, 'TEST_Tigre_en_situation_triche.mov', true, true)} />
+                  <img className='portfolio-media' src="TEST-2.png" alt="TEST 2" onClick={() => SetMedia(0, 'TEST-2.png')} />
+                  <img className='portfolio-media' src="TEST-3.png" alt="TEST 3" onClick={() => SetMedia(0, 'TEST-3.png')} />
+                  <img className='portfolio-media' src="TEST-4.png" alt="TEST 4" onClick={() => SetMedia(0, 'TEST-4.png')} />
+                  <img className='portfolio-media' src="TEST-5.png" alt="TEST 5" onClick={() => SetMedia(0, 'TEST-5.png')} />
+                </div>
+              </div>
+              <div className='portfolio-section-box'>
+                Five Night at Freddy's like game where you must cheat during an exam without being caught by your teacher made for the Game Jam Sherbrooke 2024. <br />
+                <br />
+                I worked on the following: <br />
+                <ul>
+                  <li>Captcha puzzle on the cellphone.</li>
+                  <li>End game UI menus displaying the player's game result.</li>
+                  <li>The tigger jumpscare causing the player to lose the game.</li>
+                  <li>Display mode and resolution settings and the UI to change them.</li>
+                </ul>
+                Role: Game programmer <br />
+                Team size: 5 <br />
+                Time frame: 48 hours <br />
+                Technical skills: Unity and C# <br />
+                <br />
+                // TODO: ADD BORDER TO SELECTED VIDEO/IMAGE AND FIX MOBILE IMAGES WIDTH AND ADD BACKGROUNDS AND ADD ICONS FOR ROLE, ETC..
+                <div className='play-button-container'>
+                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/test-tigre-en-situation-triche")}>
+                    Play in browser
+                    <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
+          <br />
+          <br />
           <div>
-            My project #2
+            <h3>
+              Purrfect Escape
+            </h3>
           </div>
+          <br />
+          <br />
           <div>
-            My project #3
+            <h3>
+              Sauve-Chouris
+            </h3>
+          </div>
+          <br />
+          <br />
+          <div>
+            <h3>
+              Stepping Stones
+            </h3>
           </div>
         </div>
         <br />
@@ -47,7 +130,7 @@ function Portfolio() {
           </h2>
           <hr />
           <div className='about-section'>
-            <div className='section-box'>
+            <div className='about-section-box'>
               <br />
               <div className='picture-container'>
                 <img className='picture' src="picture.png" alt="Christopher Robidas" />
@@ -58,7 +141,7 @@ function Portfolio() {
               </div>
               <br />
             </div>
-            <div className='section-box'>
+            <div className='about-section-box'>
               <h5 className='section-title'>
                 {t('portfolio.current-role')}
               </h5>
