@@ -1,5 +1,17 @@
 {
     "portfolio": {
-        "game-programmer": "GAME PROGRAMMER"
+        "about": "ABOUT",
+        "game-programmer": "GAME PROGRAMMER",
+        "email": "Email",
+        "phone": "Phone",
+        "summary": "My name is Christopher Robidas. I've been a gamer since I was old enough to hold a controller, and I'm a passionate video game programmer. I am known as a good team player and for my great ability to communicate, adapt, and learn.",
+        "current-role": "Current role",
+        "current-role-value": "Back End Developer at Gameloft Montreal",
+        "education": "Education",
+        "education-value": "Bachelor of Computer Science - University of Sherbrooke",
+        "technical-skills": "Technical skills",
+        "languages": "Languages:",
+        "technologies": "Technologies:",
+        "softwares": "Softwares:"
     }
 }
