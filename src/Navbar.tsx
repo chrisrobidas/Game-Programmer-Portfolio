@@ -56,8 +56,9 @@ function Navbar() {
           </Offcanvas.Body>
         </Offcanvas>
         <div className='right-buttons cursor-pointer'>
-          <img className='social-icon' src="linkedin-logo.png" alt="Linkedin logo" onClick={() => window.open("https://www.linkedin.com/in/christopher-robidas-a661241a2/")} />
-          <img className='social-icon middle-margin cursor-pointer' src="github-logo.png" alt="GitHub logo" onClick={() => window.open("https://github.com/chrisrobidas")} />
+        <img className='social-icon' src="mail-logo.png" alt="Mail logo" onClick={() => window.location.assign("mailto:christopher.robidas@outlook.com")} />
+          <img className='social-icon middle-margin' src="linkedin-logo.png" alt="Linkedin logo" onClick={() => window.open("https://www.linkedin.com/in/christopher-robidas-a661241a2/")} />
+          {/* <img className='social-icon middle-margin' src="github-logo.png" alt="GitHub logo" onClick={() => window.open("https://github.com/chrisrobidas")} /> */}
           <button className='resume-button' onClick={() => window.open(i18n.language === 'french' ? 'Christopher_Robidas_CV_2024.pdf' : 'Christopher_Robidas_Resume_2024.pdf')}>
             {t('navbar.resume')}
             <img className='download-image' src='download.png' alt='Download image' />

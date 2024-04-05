@@ -12,6 +12,21 @@
         "technical-skills": "Compétences techniques",
         "languages": "Langages:",
         "technologies": "Technologies:",
-        "softwares": "Logiciels:"
+        "softwares": "Logiciels:",
+        "project-summary": "Résumé",
+        "project-tasks": "J'ai travaillé sur les fonctionnalités suivantes:",
+        "project-play": "Jouer",
+        "project-play-in-browser": "Jouer en ligne",
+        "project-test": {
+            "summary": "Jeu de type Five Night at Freddy's où vous devez tricher lors d'un examen sans vous faire surprendre par votre professeur. Réalisé pour le Game Jam Sherbrooke 2024.",
+            "task1": "Puzzle Captcha sur le téléphone cellulaire.",
+            "task2": "UI du menu de fin de jeu affichant le résultat du joueur.",
+            "task3": "Jumpscare du tigre faisant perdre la partie au joueur.",
+            "task4": "Paramètres de mode d'affichage et de résolution et le UI pour les modifier.",
+            "role": "Rôle: Programmeur",
+            "team": "Taille de l'équipe: 5",
+            "time": "Fenêtre de temps: 48 heures",
+            "skills": "Compétences techniques: Unity et C#"
+        }
     }
 }
