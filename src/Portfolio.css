@@ -29,6 +29,16 @@
   background-position: center;
 }
 
+.background-container-sauve-chouris {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Sauve_Chouris_background.png');
+  background-position: center;
+}
+
+.background-container-purrfect-escape {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Purrfect-Escape_Background.png');
+  background-position: center;
+}
+
 .contact-box {
   max-width: 300px;
   width: 100%;

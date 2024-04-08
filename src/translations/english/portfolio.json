@@ -22,10 +22,31 @@
             "task1": "Captcha puzzle on the cellphone.",
             "task2": "End game UI menus displaying the player's game result.",
             "task3": "The tigger jumpscare causing the player to lose the game.",
-            "task4": "Display mode and resolution settings and the UI to change them.",
+            "task4": "Display mode and resolution settings and the UI to change them (not showing in the WebGL version).",
             "role": "Role: Programmer",
             "team": "Team size: 5",
             "time": "Time frame: 48 hours",
+            "skills": "Technical skills: Unity and C#"
+        },
+        "project-sauve-chouris": {
+            "summary": "Adventure and horror game where you need to save your bat friend while avoiding to get caugh by a grandma and her cat. Made for the Game Jam Sherbrooke 2023.",
+            "task1": "Echolocation game mechanic used to find your way in the levels.",
+            "task2": "Main menu, level selection menu, pause menu and game over menu.",
+            "task3": "Cutscenes logic displaying the images and text.",
+            "role": "Role: Programmer",
+            "team": "Team size: 6",
+            "time": "Time frame: 48 hours",
+            "skills": "Technical skills: Unity, C# and Wwise"
+        },
+        "project-purrfect-escape": {
+            "summary": "Escape game where you play as a cat wanting to escape from his house.",
+            "task1": "Interaction system with the little circles and cat paw indicating the players the items they can interact with.",
+            "task2": "Little screen and the buttons on the wall to input the secret code.",
+            "task3": "Level design including deciding the house layout and the puzzles and key items locations.",
+            "task4": "Main menu and pause menu.",
+            "role": "Role: Programmer and level designer",
+            "team": "Team size: 2",
+            "time": "Time frame: 1 week",
             "skills": "Technical skills: Unity and C#"
         }
     }

@@ -5,11 +5,11 @@ import './Portfolio.css';
 function Portfolio() {
   const { t } = useTranslation(['portfolio']);
 
-  const [selectedMedia, setSelectedMedia] = useState<number[]>([0])
-  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov'])
-  const [isVideo, setIsVideo] = useState<boolean[]>([true])
-  const [enableControls, setEnableControls] = useState<boolean[]>([true])
+  const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0])
+  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4'])
+  const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true])
+  const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true])
 
   function SetMedia(mediaGroupIndex: number, mediaIndex: number, src: string, showVideo: boolean = false, shouldEnableControls: boolean = false) {
     const newSelectedMedia = [...selectedMedia]
@@ -39,7 +39,7 @@ function Portfolio() {
   return (
     <>
       <div className='video-background'>
-        <video autoPlay muted loop id="myVideo">
+        <video autoPlay muted loop>
           <source src="gameloft-banner.mp4" type="video/mp4" />
         </video>
       </div>
@@ -77,7 +77,7 @@ function Portfolio() {
                   <video className='portfolio-main-media' autoPlay muted loop controls>
                     <source src={videoSrc[0]} type="video/mp4" />
                   </video>}
-                {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="TEST 1" />}
+                {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="Main media" />}
                 <div className='portfolio-medias'>
                   <img className={'portfolio-media' + (selectedMedia[0] == 0 ? ' portfolio-media-selected' : '')} src="TEST-1.png" alt="TEST 1" onClick={() => SetMedia(0, 0, 'TEST_Tigre_en_situation_triche.mov', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[0] == 1 ? ' portfolio-media-selected' : '')} src="TEST-2.png" alt="TEST 2" onClick={() => SetMedia(0, 1, 'TEST-2.png')} />
@@ -125,25 +125,183 @@ function Portfolio() {
             </div>
             <br />
           </div>
-          <div>
+          <div className='background-container-sauve-chouris content-container'>
             <br />
-            <h3>
-              Purrfect Escape
-            </h3>
-            <br />
-          </div>
-          <div>
-            <br />
-            <h3>
+            <h3 className='content'>
               Sauve-Chouris
             </h3>
+            <div className='portfolio-section content'>
+              <div className='portfolio-section-box'>
+                {isVideo[1] &&
+                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                    <source src={videoSrc[1]} type="video/mp4" />
+                  </video>}
+                {!isVideo[1] && <img className='portfolio-main-media' src={imgSrc[1]} alt="Main media" />}
+                <div className='portfolio-medias'>
+                  <img className={'portfolio-media' + (selectedMedia[1] == 0 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-1.png" alt="Sauve-Chouris 1" onClick={() => SetMedia(1, 0, 'Sauve-Chouris.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 1 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-2.png" alt="Sauve-Chouris 2" onClick={() => SetMedia(1, 1, 'Sauve-Chouris-2.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 2 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-3.png" alt="Sauve-Chouris 3" onClick={() => SetMedia(1, 2, 'Sauve-Chouris-3.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 3 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-4.png" alt="Sauve-Chouris 4" onClick={() => SetMedia(1, 3, 'Sauve-Chouris-4.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 4 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-5.png" alt="Sauve-Chouris 5" onClick={() => SetMedia(1, 4, 'Sauve-Chouris-5.png')} />
+                </div>
+              </div>
+              <div className='portfolio-section-box'>
+                <br />
+                <h5>{t('portfolio.project-summary')}</h5>
+                {t('portfolio.project-sauve-chouris.summary')} <br />
+                <br />
+                {t('portfolio.project-tasks')} <br />
+                <ul>
+                  <li>{t('portfolio.project-sauve-chouris.task1')}</li>
+                  <li>{t('portfolio.project-sauve-chouris.task2')}</li>
+                  <li>{t('portfolio.project-sauve-chouris.task3')}</li>
+                </ul>
+                <div className='info-line'>
+                  <img className='info-icon' src='user.png' alt='user' />
+                  {t('portfolio.project-sauve-chouris.role')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='group.png' alt='group' />
+                  {t('portfolio.project-sauve-chouris.team')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='time.png' alt='time' />
+                  {t('portfolio.project-sauve-chouris.time')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='support.png' alt='support' />
+                  {t('portfolio.project-sauve-chouris.skills')}
+                </div>
+                <br />
+                <div className='play-button-container'>
+                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/sauve-chouris")}>
+                    {t('portfolio.project-play')}
+                    <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
             <br />
           </div>
-          <div>
+          <div className='background-container-purrfect-escape content-container'>
             <br />
-            <h3>
+            <h3 className='content'>
+              Purrfect Escape
+            </h3>
+            <div className='portfolio-section content'>
+              <div className='portfolio-section-box'>
+                {isVideo[2] &&
+                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                    <source src={videoSrc[2]} type="video/mp4" />
+                  </video>}
+                {!isVideo[2] && <img className='portfolio-main-media' src={imgSrc[2]} alt="Main media" />}
+                <div className='portfolio-medias'>
+                  <img className={'portfolio-media' + (selectedMedia[2] == 0 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-1.png" alt="Purrfect Escape 1" onClick={() => SetMedia(2, 0, 'Purrfect-Escape.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 1 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-2.png" alt="Purrfect Escape 2" onClick={() => SetMedia(2, 1, 'Purrfect-Escape-2.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 2 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-3.png" alt="Purrfect Escape 3" onClick={() => SetMedia(2, 2, 'Purrfect-Escape-3.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 3 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-4.png" alt="Purrfect Escape 4" onClick={() => SetMedia(2, 3, 'Purrfect-Escape-4.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 4 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-5.png" alt="Purrfect Escape 5" onClick={() => SetMedia(2, 4, 'Purrfect-Escape-5.png')} />
+                </div>
+              </div>
+              <div className='portfolio-section-box'>
+                <br />
+                <h5>{t('portfolio.project-summary')}</h5>
+                {t('portfolio.project-purrfect-escape.summary')} <br />
+                <br />
+                {t('portfolio.project-tasks')} <br />
+                <ul>
+                  <li>{t('portfolio.project-purrfect-escape.task1')}</li>
+                  <li>{t('portfolio.project-purrfect-escape.task2')}</li>
+                  <li>{t('portfolio.project-purrfect-escape.task3')}</li>
+                  <li>{t('portfolio.project-purrfect-escape.task4')}</li>
+                </ul>
+                <div className='info-line'>
+                  <img className='info-icon' src='user.png' alt='user' />
+                  {t('portfolio.project-purrfect-escape.role')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='group.png' alt='group' />
+                  {t('portfolio.project-purrfect-escape.team')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='time.png' alt='time' />
+                  {t('portfolio.project-purrfect-escape.time')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='support.png' alt='support' />
+                  {t('portfolio.project-purrfect-escape.skills')}
+                </div>
+                <br />
+                <div className='play-button-container'>
+                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/purrfect-escape")}>
+                    {t('portfolio.project-play-in-browser')}
+                    <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
+            <br />
+          </div>
+          <div className='background-container-purrfect-escape content-container'>
+            <br />
+            <h3 className='content'>
               Stepping Stones
             </h3>
+            <div className='portfolio-section content'>
+              <div className='portfolio-section-box'>
+                {isVideo[2] &&
+                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                    <source src={videoSrc[2]} type="video/mp4" />
+                  </video>}
+                {!isVideo[2] && <img className='portfolio-main-media' src={imgSrc[2]} alt="Main media" />}
+                <div className='portfolio-medias'>
+                  <img className={'portfolio-media' + (selectedMedia[2] == 0 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-1.png" alt="Purrfect Escape 1" onClick={() => SetMedia(2, 0, 'Purrfect-Escape.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 1 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-2.png" alt="Purrfect Escape 2" onClick={() => SetMedia(2, 1, 'Purrfect-Escape-2.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 2 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-3.png" alt="Purrfect Escape 3" onClick={() => SetMedia(2, 2, 'Purrfect-Escape-3.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 3 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-4.png" alt="Purrfect Escape 4" onClick={() => SetMedia(2, 3, 'Purrfect-Escape-4.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 4 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-5.png" alt="Purrfect Escape 5" onClick={() => SetMedia(2, 4, 'Purrfect-Escape-5.png')} />
+                </div>
+              </div>
+              <div className='portfolio-section-box'>
+                <br />
+                <h5>{t('portfolio.project-summary')}</h5>
+                {t('portfolio.project-purrfect-escape.summary')} <br />
+                <br />
+                {t('portfolio.project-tasks')} <br />
+                <ul>
+                  <li>{t('portfolio.project-purrfect-escape.task1')}</li>
+                  <li>{t('portfolio.project-purrfect-escape.task2')}</li>
+                  <li>{t('portfolio.project-purrfect-escape.task3')}</li>
+                  <li>{t('portfolio.project-purrfect-escape.task4')}</li>
+                </ul>
+                <div className='info-line'>
+                  <img className='info-icon' src='user.png' alt='user' />
+                  {t('portfolio.project-purrfect-escape.role')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='group.png' alt='group' />
+                  {t('portfolio.project-purrfect-escape.team')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='time.png' alt='time' />
+                  {t('portfolio.project-purrfect-escape.time')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='support.png' alt='support' />
+                  {t('portfolio.project-purrfect-escape.skills')}
+                </div>
+                <br />
+                <div className='play-button-container'>
+                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/purrfect-escape")}>
+                    {t('portfolio.project-play-in-browser')}
+                    <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
             <br />
           </div>
         </div>
