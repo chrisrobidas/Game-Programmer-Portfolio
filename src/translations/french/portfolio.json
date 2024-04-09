@@ -18,7 +18,7 @@
         "project-play": "Jouer",
         "project-play-in-browser": "Jouer en ligne",
         "project-test": {
-            "summary": "Jeu de type Five Night at Freddy's où vous devez tricher lors d'un examen sans vous faire surprendre par votre professeur. Réalisé pour le Game Jam Sherbrooke 2024.",
+            "summary": "Jeu de type Five Nights at Freddy's où vous devez tricher lors d'un examen sans vous faire surprendre par votre professeur. Réalisé pour le Game Jam Sherbrooke 2024.",
             "task1": "Puzzle Captcha sur le téléphone cellulaire.",
             "task2": "UI du menu de fin de jeu affichant le résultat du joueur.",
             "task3": "Jumpscare du tigre faisant perdre la partie au joueur.",
@@ -39,15 +39,25 @@
             "skills": "Compétences techniques: Unity, C# et Wwise"
         },
         "project-purrfect-escape": {
-            "summary": "Jeu d'évasion où vous incarnez un chat voulant s'échapper de sa maison.",
+            "summary": "Jeu d'évasion où vous incarnez un chat voulant s'échapper de sa maison, mais pour ce faire, il doit résoudre des énigmes.",
             "task1": "Système d'interaction avec des petits cercles et une patte de chat indiquant aux joueurs les objets avec lesquels ils peuvent interagir.",
             "task2": "Petit écran et boutons au mur pour saisir le code secret.",
             "task3": "Conception du niveau, y compris la décision de l'agencement de la maison et de l'emplacement des énigmes et des éléments clés.",
             "task4": "Menu principal et menu pause.",
-            "role": "Role: Programmeur et concepteur de niveau",
+            "role": "Rôle: Programmeur et concepteur de niveau",
             "team": "Taille de l'équipe: 2",
             "time": "Fenêtre de temps: 1 semaine",
             "skills": "Compétences techniques: Unity et C#"
+        },
+        "project-stepping-stones": {
+            "summary": "Runner où vous voyagez à travers les âges pour ramener notre histoire. Réalisé pour le Game Jam Montréal 2023.",
+            "task1": "Contrôleur de personnage qui court automatiquement, peut sauter, utiliser une torche pour brûler des murs et bloquer des météores avec un bouclier.",
+            "task2": "Génération de niveaux procéduraux infinis changeant d'apparence en fonction de l'âge.",
+            "task3": "Intégrer les modèles, les animations, les interfaces et l'audio réalisés par mes collègues.",
+            "role": "Rôle: Programmeur",
+            "team": "Taille de l'équipe: 7",
+            "time": "Fenêtre de temps: 48 hours",
+            "skills": "Compétences techniques: Unreal Engine, C++, Blueprints et Wwise"
         }
     }
 }

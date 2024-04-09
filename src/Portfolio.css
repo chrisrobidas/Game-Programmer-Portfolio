@@ -24,8 +24,8 @@
   max-width: 500px;
 }
 
-.background-container-test {
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('TEST_background.png');
+.background-container-purrfect-escape {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Purrfect-Escape_Background.png');
   background-position: center;
 }
 
@@ -34,8 +34,13 @@
   background-position: center;
 }
 
-.background-container-purrfect-escape {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Purrfect-Escape_Background.png');
+.background-container-stepping-stones {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) ), url('Stepping-Stones-Background.PNG');
+  background-position: center;
+}
+
+.background-container-test {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('TEST_background.png');
   background-position: center;
 }
 

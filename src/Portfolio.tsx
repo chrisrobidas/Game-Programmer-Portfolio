@@ -6,10 +6,10 @@ function Portfolio() {
   const { t } = useTranslation(['portfolio']);
 
   const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0])
-  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4'])
-  const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true])
-  const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true])
+  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4'])
+  const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true])
+  const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true])
 
   function SetMedia(mediaGroupIndex: number, mediaIndex: number, src: string, showVideo: boolean = false, shouldEnableControls: boolean = false) {
     const newSelectedMedia = [...selectedMedia]
@@ -244,58 +244,57 @@ function Portfolio() {
             </div>
             <br />
           </div>
-          <div className='background-container-purrfect-escape content-container'>
+          <div className='background-container-stepping-stones content-container'>
             <br />
             <h3 className='content'>
               Stepping Stones
             </h3>
             <div className='portfolio-section content'>
               <div className='portfolio-section-box'>
-                {isVideo[2] &&
+                {isVideo[3] &&
                   <video className='portfolio-main-media' autoPlay muted loop controls>
-                    <source src={videoSrc[2]} type="video/mp4" />
+                    <source src={videoSrc[3]} type="video/mp4" />
                   </video>}
-                {!isVideo[2] && <img className='portfolio-main-media' src={imgSrc[2]} alt="Main media" />}
+                {!isVideo[3] && <img className='portfolio-main-media' src={imgSrc[3]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[2] == 0 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-1.png" alt="Purrfect Escape 1" onClick={() => SetMedia(2, 0, 'Purrfect-Escape.mp4', true, true)} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 1 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-2.png" alt="Purrfect Escape 2" onClick={() => SetMedia(2, 1, 'Purrfect-Escape-2.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 2 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-3.png" alt="Purrfect Escape 3" onClick={() => SetMedia(2, 2, 'Purrfect-Escape-3.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 3 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-4.png" alt="Purrfect Escape 4" onClick={() => SetMedia(2, 3, 'Purrfect-Escape-4.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 4 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-5.png" alt="Purrfect Escape 5" onClick={() => SetMedia(2, 4, 'Purrfect-Escape-5.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 0 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-1.png" alt="Stepping Stones 1" onClick={() => SetMedia(3, 0, 'Stepping_Stones.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 1 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-2.png" alt="Stepping Stones 2" onClick={() => SetMedia(3, 1, 'Stepping-Stones-2.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 2 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-3.png" alt="Stepping Stones 3" onClick={() => SetMedia(3, 2, 'Stepping-Stones-3.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 3 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-4.png" alt="Stepping Stones 4" onClick={() => SetMedia(3, 3, 'Stepping-Stones-4.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 4 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-5.png" alt="Stepping Stones 5" onClick={() => SetMedia(3, 4, 'Stepping-Stones-5.png')} />
                 </div>
               </div>
               <div className='portfolio-section-box'>
                 <br />
                 <h5>{t('portfolio.project-summary')}</h5>
-                {t('portfolio.project-purrfect-escape.summary')} <br />
+                {t('portfolio.project-stepping-stones.summary')} <br />
                 <br />
                 {t('portfolio.project-tasks')} <br />
                 <ul>
-                  <li>{t('portfolio.project-purrfect-escape.task1')}</li>
-                  <li>{t('portfolio.project-purrfect-escape.task2')}</li>
-                  <li>{t('portfolio.project-purrfect-escape.task3')}</li>
-                  <li>{t('portfolio.project-purrfect-escape.task4')}</li>
+                  <li>{t('portfolio.project-stepping-stones.task1')}</li>
+                  <li>{t('portfolio.project-stepping-stones.task2')}</li>
+                  <li>{t('portfolio.project-stepping-stones.task3')}</li>
                 </ul>
                 <div className='info-line'>
                   <img className='info-icon' src='user.png' alt='user' />
-                  {t('portfolio.project-purrfect-escape.role')}
+                  {t('portfolio.project-stepping-stones.role')}
                 </div>
                 <div className='info-line'>
                   <img className='info-icon' src='group.png' alt='group' />
-                  {t('portfolio.project-purrfect-escape.team')}
+                  {t('portfolio.project-stepping-stones.team')}
                 </div>
                 <div className='info-line'>
                   <img className='info-icon' src='time.png' alt='time' />
-                  {t('portfolio.project-purrfect-escape.time')}
+                  {t('portfolio.project-stepping-stones.time')}
                 </div>
                 <div className='info-line'>
                   <img className='info-icon' src='support.png' alt='support' />
-                  {t('portfolio.project-purrfect-escape.skills')}
+                  {t('portfolio.project-stepping-stones.skills')}
                 </div>
                 <br />
                 <div className='play-button-container'>
-                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/purrfect-escape")}>
-                    {t('portfolio.project-play-in-browser')}
+                  <button className='play-button' onClick={() => window.open("https://hyperguy.itch.io/stepping-stones")}>
+                    {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
                   </button>
                 </div>
