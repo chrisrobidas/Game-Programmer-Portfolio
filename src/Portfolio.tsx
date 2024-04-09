@@ -40,7 +40,7 @@ function Portfolio() {
     <>
       <div className='video-background'>
         <video autoPlay muted loop>
-          <source src="gameloft-banner.mp4" type="video/mp4" />
+          <source src="Welcome-Video.mp4" type="video/mp4" />
         </video>
       </div>
       <div id='body-content'>
