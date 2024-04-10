@@ -7,7 +7,7 @@ function Portfolio() {
 
   const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0])
   const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4'])
   const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true])
   const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true])
 
@@ -79,7 +79,7 @@ function Portfolio() {
                   </video>}
                 {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[0] == 0 ? ' portfolio-media-selected' : '')} src="TEST-1.png" alt="TEST 1" onClick={() => SetMedia(0, 0, 'TEST_Tigre_en_situation_triche.mov', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[0] == 0 ? ' portfolio-media-selected' : '')} src="TEST-1.png" alt="TEST 1" onClick={() => SetMedia(0, 0, 'TEST_Tigre_en_situation_triche.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[0] == 1 ? ' portfolio-media-selected' : '')} src="TEST-2.png" alt="TEST 2" onClick={() => SetMedia(0, 1, 'TEST-2.png')} />
                   <img className={'portfolio-media' + (selectedMedia[0] == 2 ? ' portfolio-media-selected' : '')} src="TEST-3.png" alt="TEST 3" onClick={() => SetMedia(0, 2, 'TEST-3.png')} />
                   <img className={'portfolio-media' + (selectedMedia[0] == 3 ? ' portfolio-media-selected' : '')} src="TEST-4.png" alt="TEST 4" onClick={() => SetMedia(0, 3, 'TEST-4.png')} />
