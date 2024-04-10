@@ -7,7 +7,7 @@ function Portfolio() {
 
   const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0])
   const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mov', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4'])
   const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true])
   const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true])
 
@@ -138,7 +138,7 @@ function Portfolio() {
                   </video>}
                 {!isVideo[1] && <img className='portfolio-main-media' src={imgSrc[1]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[1] == 0 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-1.png" alt="Sauve-Chouris 1" onClick={() => SetMedia(1, 0, 'Sauve-Chouris.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 0 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-1.png" alt="Sauve-Chouris 1" onClick={() => SetMedia(1, 0, 'Sauve-Chouris3.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[1] == 1 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-2.png" alt="Sauve-Chouris 2" onClick={() => SetMedia(1, 1, 'Sauve-Chouris-2.png')} />
                   <img className={'portfolio-media' + (selectedMedia[1] == 2 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-3.png" alt="Sauve-Chouris 3" onClick={() => SetMedia(1, 2, 'Sauve-Chouris-3.png')} />
                   <img className={'portfolio-media' + (selectedMedia[1] == 3 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-4.png" alt="Sauve-Chouris 4" onClick={() => SetMedia(1, 3, 'Sauve-Chouris-4.png')} />
