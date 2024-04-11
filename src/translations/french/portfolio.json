@@ -21,7 +21,7 @@
             "summary": "Jeu de type Five Nights at Freddy's où vous devez tricher lors d'un examen sans vous faire surprendre par votre professeur. Réalisé pour le Game Jam Sherbrooke 2024.",
             "task1": "Puzzle Captcha sur le téléphone cellulaire.",
             "task2": "UI du menu de fin de jeu affichant le résultat du joueur.",
-            "task3": "Jumpscare du tigre faisant perdre la partie au joueur.",
+            "task3": "Jump scare du tigre faisant perdre la partie au joueur.",
             "task4": "Paramètres de mode d'affichage et de résolution et le UI pour les modifier (ne s'affiche pas dans la version WebGL).",
             "role": "Rôle: Programmeur",
             "team": "Taille de l'équipe: 5",
