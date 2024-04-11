@@ -68,7 +68,7 @@ function Portfolio() {
           </div>
           <div className='background-container-test content-container'>
             <br />
-            <h3 className='content'>
+            <h3 id='test' className='content'>
               T.E.S.T. : Tigre en situation triche
             </h3>
             <div className='portfolio-section content'>
@@ -127,7 +127,7 @@ function Portfolio() {
           </div>
           <div className='background-container-sauve-chouris content-container'>
             <br />
-            <h3 className='content'>
+            <h3 id='sauve-chouris' className='content'>
               Sauve-Chouris
             </h3>
             <div className='portfolio-section content'>
@@ -186,7 +186,7 @@ function Portfolio() {
           </div>
           <div className='background-container-purrfect-escape content-container'>
             <br />
-            <h3 className='content'>
+            <h3 id='purrfect-escape' className='content'>
               Purrfect Escape
             </h3>
             <div className='portfolio-section content'>
@@ -246,7 +246,7 @@ function Portfolio() {
           </div>
           <div className='background-container-stepping-stones content-container'>
             <br />
-            <h3 className='content'>
+            <h3 id='stepping-stones' className='content'>
               Stepping Stones
             </h3>
             <div className='portfolio-section content'>
