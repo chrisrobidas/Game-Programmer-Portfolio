@@ -5,7 +5,7 @@ import './Portfolio.css';
 function Portfolio() {
   const { t } = useTranslation(['portfolio']);
 
-  const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0, 0])
+  const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0, 0, 0])
   const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png', 'Arcane_Echoes_2.png'])
   const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4', 'Arcane_Echoes.mp4'])
   const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true, true])
