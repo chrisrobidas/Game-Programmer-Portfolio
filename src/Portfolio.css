@@ -24,8 +24,18 @@
   max-width: 500px;
 }
 
+.background-container-about {
+  background-color: #12121254;
+  background-position: center;
+}
+
 .background-container-arcane-echoes {
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../Arcane_Echoes_Background2.png');
+  background-position: center;
+}
+
+.background-container-contact {
+  background-color: #121212a9;
   background-position: center;
 }
 
@@ -204,7 +214,17 @@
   width: 100%;
 }
 
+.section-hr {
+  width: calc(100% - 20px);
+  border-bottom: 2px solid #adadad;
+}
+
 .section-title {
+  color: #91FE3C;
+  padding-top: 50px;
+}
+
+.section-sub-title {
   color: #91FE3C;
 }
 
@@ -232,7 +252,6 @@
   justify-content: center;
   width: 100%;
   height: calc(80vh - 55px);
-  min-width: 1920px;
   max-width: calc(100% - 30px);
   max-height: 80vh;
   z-index: 1;

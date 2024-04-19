@@ -59,15 +59,11 @@ function Portfolio() {
           </div>
         </div>
         <div id="portfolio" className='section'>
-          <div className='content-container'>
-            <br/>
+          <div className='background-container-arcane-echoes content-container'>
             <h2 className='section-title content'>
               PORTFOLIO
             </h2>
-            <hr className='content' />
-            <br />
-          </div>
-          <div className='background-container-arcane-echoes content-container'>
+            <div className='section-hr content' />
             <br />
             <h3 id='arcane-echoes' className='content'>
               Arcane Echoes: Scroll of Destiny
@@ -240,7 +236,6 @@ function Portfolio() {
                   </button>
                 </div>
               </div>
-              <br />
             </div>
             <br />
           </div>
@@ -300,7 +295,6 @@ function Portfolio() {
                   </button>
                 </div>
               </div>
-              <br />
             </div>
             <br />
           </div>
@@ -359,18 +353,15 @@ function Portfolio() {
                   </button>
                 </div>
               </div>
-              <br />
             </div>
             <br />
           </div>
         </div>
-        <br />
-        <br />
-        <div id="about" className='section content-container'>
+        <div id="about" className='background-container-about section content-container'>
           <h2 className='section-title content'>
             {t('portfolio.about')}
           </h2>
-          <hr className='content' />
+          <div className='section-hr content' />
           <br />
           <div className='about-section content'>
             <div className='about-section-box'>
@@ -384,21 +375,21 @@ function Portfolio() {
               <br />
             </div>
             <div className='about-section-box'>
-              <h5 className='section-title'>
+              <h5 className='section-sub-title'>
                 {t('portfolio.current-role')}
               </h5>
               <div>
                 {t('portfolio.current-role-value')}
               </div>
               <br />
-              <h5 className='section-title'>
+              <h5 className='section-sub-title'>
                 {t('portfolio.education')}
               </h5>
               <div>
                 {t('portfolio.education-value')}
               </div>
               <br />
-              <h5 className='section-title'>
+              <h5 className='section-sub-title'>
                 {t('portfolio.technical-skills')}
               </h5>
               <div>
@@ -408,14 +399,13 @@ function Portfolio() {
               </div>
             </div>
           </div>
+          <br />
         </div>
-        <br />
-        <br />
-        <div id="contact" className='section content-container'>
+        <div id="contact" className='background-container-contact section content-container'>
           <h2 className='section-title content'>
             CONTACT
           </h2>
-          <hr className='content' />
+          <div className='section-hr content' />
           <br />
           <div className='contact-section content'>
             <div className='contact-box'>
