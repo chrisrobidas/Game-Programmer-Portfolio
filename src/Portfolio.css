@@ -30,7 +30,7 @@
 }
 
 .background-container-arcane-echoes {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../Arcane_Echoes_Background2.png');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('../Arcane_Echoes_Background2.png');
   background-position: center;
 }
 
@@ -40,22 +40,22 @@
 }
 
 .background-container-purrfect-escape {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../Purrfect-Escape_Background.png');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)), url('../Purrfect-Escape_Background.png');
   background-position: center;
 }
 
 .background-container-sauve-chouris {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../Sauve_Chouris_background.png');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.97)), url('../Sauve_Chouris_background.png');
   background-position: center;
 }
 
 .background-container-stepping-stones {
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) ), url('../Stepping-Stones-Background.PNG');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95)), url('../Stepping-Stones-Background.PNG');
   background-position: center;
 }
 
 .background-container-test {
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../TEST_background.png');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.8)), url('../TEST_background.png');
   background-position: center;
 }
 
