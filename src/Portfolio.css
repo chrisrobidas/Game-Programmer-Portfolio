@@ -24,6 +24,11 @@
   max-width: 500px;
 }
 
+.background-container-arcane-echoes {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../Arcane_Echoes_Background2.png');
+  background-position: center;
+}
+
 .background-container-purrfect-escape {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../Purrfect-Escape_Background.png');
   background-position: center;

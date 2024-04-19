@@ -14,9 +14,20 @@
         "technologies": "Technologies:",
         "softwares": "Softwares:",
         "project-summary": "Summary",
-        "project-tasks": "I worked on the following features:",
+        "project-tasks": "I worked on the following:",
         "project-play": "Play",
         "project-play-in-browser": "Play in browser",
+        "project-arcane-echoes": {
+            "summary": "Adventure game in which you must obtain a magical scroll protected by corrupted souls in order to leave an alternate dimension. Made for the Ludum Dare 55 game jam.",
+            "task1": "Enemies AI that can patrol, avoid obstacles, have a field of vision and become aggressive if the player passes inside.",
+            "task2": "Enemy AI type attacking with melee and another throwing fireballs.",
+            "task3": "Enemy AI spawn and death logic.",
+            "task4": "Integrate models, textures, VFXs, animations and audio.",
+            "role": "Role: Programmer",
+            "team": "Team size: 8",
+            "time": "Time frame: 72 heures",
+            "skills": "Technical skills: Unity and C#"
+        },
         "project-test": {
             "summary": "Five Nights at Freddy's like game where you must cheat during an exam without being caught by your teacher. Made for the Game Jam Sherbrooke 2024.",
             "task1": "Captcha puzzle on the cellphone.",

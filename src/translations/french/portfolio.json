@@ -14,9 +14,20 @@
         "technologies": "Technologies:",
         "softwares": "Logiciels:",
         "project-summary": "Résumé",
-        "project-tasks": "J'ai travaillé sur les fonctionnalités suivantes:",
+        "project-tasks": "J'ai travaillé sur ce qui suit:",
         "project-play": "Jouer",
         "project-play-in-browser": "Jouer en ligne",
+        "project-arcane-echoes": {
+            "summary": "Jeu d'aventure dans lequel vous devez obtenir un parchemin magique protégé par des âmes corrompues afin de quitter une dimension alternative. Réalisé pour le game jam du Ludum Dare 55.",
+            "task1": "AI d'ennemis pouvant patrouiller, éviter des obstacles, ont un champ de vision et qui deviennent agressifs si le joueur passe à l'intérieur.",
+            "task2": "Type d'ennemi AI attaquant au corps-à-corps et un autre lançant des boules de feu.",
+            "task3": "Logique de spawn et de mort des ennemis AI.",
+            "task4": "Intégrer les modèles, les textures, VFXs, les animations et l'audio.",
+            "role": "Rôle: Programmeur",
+            "team": "Taille de l'équipe: 8",
+            "time": "Fenêtre de temps: 72 heures",
+            "skills": "Compétences techniques: Unity et C#"
+        },
         "project-test": {
             "summary": "Jeu de type Five Nights at Freddy's où vous devez tricher lors d'un examen sans vous faire surprendre par votre professeur. Réalisé pour le Game Jam Sherbrooke 2024.",
             "task1": "Puzzle Captcha sur le téléphone cellulaire.",

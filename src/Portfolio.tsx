@@ -5,11 +5,11 @@ import './Portfolio.css';
 function Portfolio() {
   const { t } = useTranslation(['portfolio']);
 
-  const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0])
-  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4'])
-  const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true])
-  const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true])
+  const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0, 0])
+  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png', 'Arcane_Echoes_2.png'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4', 'Arcane_Echoes.mp4'])
+  const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true, true])
+  const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true, true])
 
   function SetMedia(mediaGroupIndex: number, mediaIndex: number, src: string, showVideo: boolean = false, shouldEnableControls: boolean = false) {
     const newSelectedMedia = [...selectedMedia]
@@ -40,7 +40,7 @@ function Portfolio() {
     <>
       <div className='video-background'>
         <video autoPlay muted loop>
-          <source src="Welcome-Video.mp4" type="video/mp4" />
+          <source src="Welcome-Video2.mp4" type="video/mp4" />
         </video>
       </div>
       <div id='body-content'>
@@ -64,6 +64,65 @@ function Portfolio() {
               PORTFOLIO
             </h2>
             <hr className='content' />
+            <br />
+          </div>
+          <div className='background-container-arcane-echoes content-container'>
+            <br />
+            <h3 id='test' className='content'>
+              Arcane Echoes: Scroll of Destiny
+            </h3>
+            <div className='portfolio-section content'>
+              <div className='portfolio-section-box'>
+                {isVideo[4] &&
+                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                    <source src={videoSrc[4]} type="video/mp4" />
+                  </video>}
+                {!isVideo[4] && <img className='portfolio-main-media' src={imgSrc[4]} alt="Main media" />}
+                <div className='portfolio-medias'>
+                  <img className={'portfolio-media' + (selectedMedia[4] == 0 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_1.png" alt="Arcane Echoes 1" onClick={() => SetMedia(4, 0, 'Arcane_Echoes.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 1 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_2.png" alt="Arcane Echoes 2" onClick={() => SetMedia(4, 1, 'Arcane_Echoes_2.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 2 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_3.png" alt="Arcane Echoes 3" onClick={() => SetMedia(4, 2, 'Arcane_Echoes_3.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 3 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_4.png" alt="Arcane Echoes 4" onClick={() => SetMedia(4, 3, 'Arcane_Echoes_4.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 4 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_5.png" alt="Arcane Echoes 5" onClick={() => SetMedia(4, 4, 'Arcane_Echoes_5.png')} />
+                </div>
+              </div>
+              <div className='portfolio-section-box'>
+                <br />
+                <h5>{t('portfolio.project-summary')}</h5>
+                {t('portfolio.project-arcane-echoes.summary')} <br />
+                <br />
+                {t('portfolio.project-tasks')} <br />
+                <ul>
+                  <li>{t('portfolio.project-arcane-echoes.task1')}</li>
+                  <li>{t('portfolio.project-arcane-echoes.task2')}</li>
+                  <li>{t('portfolio.project-arcane-echoes.task3')}</li>
+                  <li>{t('portfolio.project-arcane-echoes.task4')}</li>
+                </ul>
+                <div className='info-line'>
+                  <img className='info-icon' src='user.png' alt='user' />
+                  {t('portfolio.project-arcane-echoes.role')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='group.png' alt='group' />
+                  {t('portfolio.project-arcane-echoes.team')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='time.png' alt='time' />
+                  {t('portfolio.project-arcane-echoes.time')}
+                </div>
+                <div className='info-line'>
+                  <img className='info-icon' src='support.png' alt='support' />
+                  {t('portfolio.project-arcane-echoes.skills')}
+                </div>
+                <br />
+                <div className='play-button-container'>
+                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/arcane-echoes-scroll-of-destiny")}>
+                    {t('portfolio.project-play')}
+                    <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                </div>
+              </div>
+            </div>
             <br />
           </div>
           <div className='background-container-test content-container'>
