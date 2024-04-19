@@ -83,7 +83,7 @@ function Portfolio() {
                   <img className={'portfolio-media' + (selectedMedia[4] == 4 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_5.png" alt="Arcane Echoes 5" onClick={() => SetMedia(4, 4, 'Arcane_Echoes_5.png')} />
                 </div>
               </div>
-              <div className='portfolio-section-box'>
+              <div className='portfolio-section-box blurry-box'>
                 <br />
                 <h5>{t('portfolio.project-summary')}</h5>
                 {t('portfolio.project-arcane-echoes.summary')} <br />
@@ -142,7 +142,7 @@ function Portfolio() {
                   <img className={'portfolio-media' + (selectedMedia[0] == 4 ? ' portfolio-media-selected' : '')} src="TEST-5.png" alt="TEST 5" onClick={() => SetMedia(0, 4, 'TEST-5.png')} />
                 </div>
               </div>
-              <div className='portfolio-section-box'>
+              <div className='portfolio-section-box blurry-box'>
                 <br />
                 <h5>{t('portfolio.project-summary')}</h5>
                 {t('portfolio.project-test.summary')} <br />
@@ -201,7 +201,7 @@ function Portfolio() {
                   <img className={'portfolio-media' + (selectedMedia[1] == 4 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-5.png" alt="Sauve-Chouris 5" onClick={() => SetMedia(1, 4, 'Sauve-Chouris-5.png')} />
                 </div>
               </div>
-              <div className='portfolio-section-box'>
+              <div className='portfolio-section-box blurry-box'>
                 <br />
                 <h5>{t('portfolio.project-summary')}</h5>
                 {t('portfolio.project-sauve-chouris.summary')} <br />
@@ -259,7 +259,7 @@ function Portfolio() {
                   <img className={'portfolio-media' + (selectedMedia[2] == 4 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-5.png" alt="Purrfect Escape 5" onClick={() => SetMedia(2, 4, 'Purrfect-Escape-5.png')} />
                 </div>
               </div>
-              <div className='portfolio-section-box'>
+              <div className='portfolio-section-box blurry-box'>
                 <br />
                 <h5>{t('portfolio.project-summary')}</h5>
                 {t('portfolio.project-purrfect-escape.summary')} <br />
@@ -318,7 +318,7 @@ function Portfolio() {
                   <img className={'portfolio-media' + (selectedMedia[3] == 4 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-5.png" alt="Stepping Stones 5" onClick={() => SetMedia(3, 4, 'Stepping-Stones-5.png')} />
                 </div>
               </div>
-              <div className='portfolio-section-box'>
+              <div className='portfolio-section-box blurry-box'>
                 <br />
                 <h5>{t('portfolio.project-summary')}</h5>
                 {t('portfolio.project-stepping-stones.summary')} <br />
