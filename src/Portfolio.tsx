@@ -68,7 +68,7 @@ function Portfolio() {
           </div>
           <div className='background-container-arcane-echoes content-container'>
             <br />
-            <h3 id='test' className='content'>
+            <h3 id='arcane-echoes' className='content'>
               Arcane Echoes: Scroll of Destiny
             </h3>
             <div className='portfolio-section content'>
