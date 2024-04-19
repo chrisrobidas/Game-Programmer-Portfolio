@@ -39,7 +39,7 @@ function Portfolio() {
   return (
     <>
       <div className='video-background'>
-        <video autoPlay muted loop>
+        <video className='welcome-video' autoPlay muted loop playsInline>
           <source src="Welcome-Video2.mp4" type="video/mp4" />
         </video>
       </div>
@@ -60,6 +60,7 @@ function Portfolio() {
         </div>
         <div id="portfolio" className='section'>
           <div className='content-container'>
+            <br/>
             <h2 className='section-title content'>
               PORTFOLIO
             </h2>
@@ -74,7 +75,7 @@ function Portfolio() {
             <div className='portfolio-section content'>
               <div className='portfolio-section-box'>
                 {isVideo[4] &&
-                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                  <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[4]} type="video/mp4" />
                   </video>}
                 {!isVideo[4] && <img className='portfolio-main-media' src={imgSrc[4]} alt="Main media" />}
@@ -133,7 +134,7 @@ function Portfolio() {
             <div className='portfolio-section content'>
               <div className='portfolio-section-box'>
                 {isVideo[0] &&
-                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                  <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[0]} type="video/mp4" />
                   </video>}
                 {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="Main media" />}
@@ -192,7 +193,7 @@ function Portfolio() {
             <div className='portfolio-section content'>
               <div className='portfolio-section-box'>
                 {isVideo[1] &&
-                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                  <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[1]} type="video/mp4" />
                   </video>}
                 {!isVideo[1] && <img className='portfolio-main-media' src={imgSrc[1]} alt="Main media" />}
@@ -251,7 +252,7 @@ function Portfolio() {
             <div className='portfolio-section content'>
               <div className='portfolio-section-box'>
                 {isVideo[2] &&
-                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                  <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[2]} type="video/mp4" />
                   </video>}
                 {!isVideo[2] && <img className='portfolio-main-media' src={imgSrc[2]} alt="Main media" />}
@@ -311,7 +312,7 @@ function Portfolio() {
             <div className='portfolio-section content'>
               <div className='portfolio-section-box'>
                 {isVideo[3] &&
-                  <video className='portfolio-main-media' autoPlay muted loop controls>
+                  <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[3]} type="video/mp4" />
                   </video>}
                 {!isVideo[3] && <img className='portfolio-main-media' src={imgSrc[3]} alt="Main media" />}
