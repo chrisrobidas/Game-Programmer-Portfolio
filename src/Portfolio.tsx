@@ -269,7 +269,6 @@ function Portfolio() {
                   <li>{t('portfolio.project-purrfect-escape.task1')}</li>
                   <li>{t('portfolio.project-purrfect-escape.task2')}</li>
                   <li>{t('portfolio.project-purrfect-escape.task3')}</li>
-                  <li>{t('portfolio.project-purrfect-escape.task4')}</li>
                 </ul>
                 <div className='info-line'>
                   <img className='info-icon' src='user.png' alt='user' />
