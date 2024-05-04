@@ -6,8 +6,8 @@ function Portfolio() {
   const { t } = useTranslation(['portfolio']);
 
   const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0, 0, 0])
-  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.png', 'Sauve-Chouris-2.png', 'Purrfect-Escape-2.png', 'Stepping-Stones-2.png', 'Arcane_Echoes_2.png'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris3.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4', 'Arcane_Echoes.mp4'])
+  const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.jpg', 'Sauve-Chouris-2.jpg', 'Purrfect-Escape-2.jpg', 'Stepping-Stones-2.jpg', 'Arcane_Echoes_2.jpg'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4', 'Arcane_Echoes.mp4'])
   const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true, true])
   const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true, true])
 
@@ -40,7 +40,7 @@ function Portfolio() {
     <>
       <div className='video-background'>
         <video className='welcome-video' autoPlay muted loop playsInline>
-          <source src="Welcome-Video2.mp4" type="video/mp4" />
+          <source src="Welcome-Video.mp4" type="video/mp4" />
         </video>
       </div>
       <div id='body-content'>
@@ -76,11 +76,11 @@ function Portfolio() {
                   </video>}
                 {!isVideo[4] && <img className='portfolio-main-media' src={imgSrc[4]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[4] == 0 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_1.png" alt="Arcane Echoes 1" onClick={() => SetMedia(4, 0, 'Arcane_Echoes.mp4', true, true)} />
-                  <img className={'portfolio-media' + (selectedMedia[4] == 1 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_2.png" alt="Arcane Echoes 2" onClick={() => SetMedia(4, 1, 'Arcane_Echoes_2.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[4] == 2 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_3.png" alt="Arcane Echoes 3" onClick={() => SetMedia(4, 2, 'Arcane_Echoes_3.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[4] == 3 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_4.png" alt="Arcane Echoes 4" onClick={() => SetMedia(4, 3, 'Arcane_Echoes_4.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[4] == 4 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_5.png" alt="Arcane Echoes 5" onClick={() => SetMedia(4, 4, 'Arcane_Echoes_5.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 0 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_1.jpg" alt="Arcane Echoes 1" onClick={() => SetMedia(4, 0, 'Arcane_Echoes.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 1 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_2.jpg" alt="Arcane Echoes 2" onClick={() => SetMedia(4, 1, 'Arcane_Echoes_2.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 2 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_3.jpg" alt="Arcane Echoes 3" onClick={() => SetMedia(4, 2, 'Arcane_Echoes_3.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 3 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_4.jpg" alt="Arcane Echoes 4" onClick={() => SetMedia(4, 3, 'Arcane_Echoes_4.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[4] == 4 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_5.jpg" alt="Arcane Echoes 5" onClick={() => SetMedia(4, 4, 'Arcane_Echoes_5.jpg')} />
                 </div>
                 <br />
               </div>
@@ -135,11 +135,11 @@ function Portfolio() {
                   </video>}
                 {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[0] == 0 ? ' portfolio-media-selected' : '')} src="TEST-1.png" alt="TEST 1" onClick={() => SetMedia(0, 0, 'TEST_Tigre_en_situation_triche.mp4', true, true)} />
-                  <img className={'portfolio-media' + (selectedMedia[0] == 1 ? ' portfolio-media-selected' : '')} src="TEST-2.png" alt="TEST 2" onClick={() => SetMedia(0, 1, 'TEST-2.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[0] == 2 ? ' portfolio-media-selected' : '')} src="TEST-3.png" alt="TEST 3" onClick={() => SetMedia(0, 2, 'TEST-3.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[0] == 3 ? ' portfolio-media-selected' : '')} src="TEST-4.png" alt="TEST 4" onClick={() => SetMedia(0, 3, 'TEST-4.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[0] == 4 ? ' portfolio-media-selected' : '')} src="TEST-5.png" alt="TEST 5" onClick={() => SetMedia(0, 4, 'TEST-5.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[0] == 0 ? ' portfolio-media-selected' : '')} src="TEST-1.jpg" alt="TEST 1" onClick={() => SetMedia(0, 0, 'TEST_Tigre_en_situation_triche.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[0] == 1 ? ' portfolio-media-selected' : '')} src="TEST-2.jpg" alt="TEST 2" onClick={() => SetMedia(0, 1, 'TEST-2.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[0] == 2 ? ' portfolio-media-selected' : '')} src="TEST-3.jpg" alt="TEST 3" onClick={() => SetMedia(0, 2, 'TEST-3.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[0] == 3 ? ' portfolio-media-selected' : '')} src="TEST-4.jpg" alt="TEST 4" onClick={() => SetMedia(0, 3, 'TEST-4.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[0] == 4 ? ' portfolio-media-selected' : '')} src="TEST-5.jpg" alt="TEST 5" onClick={() => SetMedia(0, 4, 'TEST-5.jpg')} />
                 </div>
                 <br />
               </div>
@@ -194,11 +194,11 @@ function Portfolio() {
                   </video>}
                 {!isVideo[1] && <img className='portfolio-main-media' src={imgSrc[1]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[1] == 0 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-1.png" alt="Sauve-Chouris 1" onClick={() => SetMedia(1, 0, 'Sauve-Chouris3.mp4', true, true)} />
-                  <img className={'portfolio-media' + (selectedMedia[1] == 1 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-2.png" alt="Sauve-Chouris 2" onClick={() => SetMedia(1, 1, 'Sauve-Chouris-2.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[1] == 2 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-3.png" alt="Sauve-Chouris 3" onClick={() => SetMedia(1, 2, 'Sauve-Chouris-3.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[1] == 3 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-4.png" alt="Sauve-Chouris 4" onClick={() => SetMedia(1, 3, 'Sauve-Chouris-4.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[1] == 4 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-5.png" alt="Sauve-Chouris 5" onClick={() => SetMedia(1, 4, 'Sauve-Chouris-5.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 0 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-1.jpg" alt="Sauve-Chouris 1" onClick={() => SetMedia(1, 0, 'Sauve-Chouris.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 1 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-2.jpg" alt="Sauve-Chouris 2" onClick={() => SetMedia(1, 1, 'Sauve-Chouris-2.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 2 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-3.jpg" alt="Sauve-Chouris 3" onClick={() => SetMedia(1, 2, 'Sauve-Chouris-3.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 3 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-4.jpg" alt="Sauve-Chouris 4" onClick={() => SetMedia(1, 3, 'Sauve-Chouris-4.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[1] == 4 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-5.jpg" alt="Sauve-Chouris 5" onClick={() => SetMedia(1, 4, 'Sauve-Chouris-5.jpg')} />
                 </div>
                 <br />
               </div>
@@ -252,11 +252,11 @@ function Portfolio() {
                   </video>}
                 {!isVideo[2] && <img className='portfolio-main-media' src={imgSrc[2]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[2] == 0 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-1.png" alt="Purrfect Escape 1" onClick={() => SetMedia(2, 0, 'Purrfect-Escape.mp4', true, true)} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 1 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-2.png" alt="Purrfect Escape 2" onClick={() => SetMedia(2, 1, 'Purrfect-Escape-2.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 2 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-3.png" alt="Purrfect Escape 3" onClick={() => SetMedia(2, 2, 'Purrfect-Escape-3.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 3 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-4.png" alt="Purrfect Escape 4" onClick={() => SetMedia(2, 3, 'Purrfect-Escape-4.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[2] == 4 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-5.png" alt="Purrfect Escape 5" onClick={() => SetMedia(2, 4, 'Purrfect-Escape-5.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 0 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-1.jpg" alt="Purrfect Escape 1" onClick={() => SetMedia(2, 0, 'Purrfect-Escape.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 1 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-2.jpg" alt="Purrfect Escape 2" onClick={() => SetMedia(2, 1, 'Purrfect-Escape-2.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 2 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-3.jpg" alt="Purrfect Escape 3" onClick={() => SetMedia(2, 2, 'Purrfect-Escape-3.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 3 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-4.jpg" alt="Purrfect Escape 4" onClick={() => SetMedia(2, 3, 'Purrfect-Escape-4.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[2] == 4 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-5.jpg" alt="Purrfect Escape 5" onClick={() => SetMedia(2, 4, 'Purrfect-Escape-5.jpg')} />
                 </div>
                 <br />
               </div>
@@ -310,11 +310,11 @@ function Portfolio() {
                   </video>}
                 {!isVideo[3] && <img className='portfolio-main-media' src={imgSrc[3]} alt="Main media" />}
                 <div className='portfolio-medias'>
-                  <img className={'portfolio-media' + (selectedMedia[3] == 0 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-1.png" alt="Stepping Stones 1" onClick={() => SetMedia(3, 0, 'Stepping_Stones.mp4', true, true)} />
-                  <img className={'portfolio-media' + (selectedMedia[3] == 1 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-2.png" alt="Stepping Stones 2" onClick={() => SetMedia(3, 1, 'Stepping-Stones-2.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[3] == 2 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-3.png" alt="Stepping Stones 3" onClick={() => SetMedia(3, 2, 'Stepping-Stones-3.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[3] == 3 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-4.png" alt="Stepping Stones 4" onClick={() => SetMedia(3, 3, 'Stepping-Stones-4.png')} />
-                  <img className={'portfolio-media' + (selectedMedia[3] == 4 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-5.png" alt="Stepping Stones 5" onClick={() => SetMedia(3, 4, 'Stepping-Stones-5.png')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 0 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-1.jpg" alt="Stepping Stones 1" onClick={() => SetMedia(3, 0, 'Stepping_Stones.mp4', true, true)} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 1 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-2.jpg" alt="Stepping Stones 2" onClick={() => SetMedia(3, 1, 'Stepping-Stones-2.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 2 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-3.jpg" alt="Stepping Stones 3" onClick={() => SetMedia(3, 2, 'Stepping-Stones-3.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 3 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-4.jpg" alt="Stepping Stones 4" onClick={() => SetMedia(3, 3, 'Stepping-Stones-4.jpg')} />
+                  <img className={'portfolio-media' + (selectedMedia[3] == 4 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-5.jpg" alt="Stepping Stones 5" onClick={() => SetMedia(3, 4, 'Stepping-Stones-5.jpg')} />
                 </div>
                 <br />
               </div>
@@ -365,7 +365,7 @@ function Portfolio() {
           <div className='about-section content'>
             <div className='about-section-box'>
               <div className='picture-container'>
-                <img className='picture' src="picture.png" alt="Christopher Robidas" />
+                <img className='picture' src="picture.jpg" alt="Christopher Robidas" />
               </div>
               <br />
               <div>
