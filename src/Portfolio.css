@@ -30,7 +30,7 @@
 }
 
 .background-container-arcane-echoes {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../Arcane_Echoes_Background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Arcane_Echoes_Background.jpg');
   background-position: center;
 }
 
@@ -40,22 +40,22 @@
 }
 
 .background-container-purrfect-escape {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../Purrfect-Escape_Background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Purrfect-Escape_Background.jpg');
   background-position: center;
 }
 
 .background-container-sauve-chouris {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../Sauve_Chouris_background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Sauve_Chouris_background.jpg');
   background-position: center;
 }
 
 .background-container-stepping-stones {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../Stepping-Stones-Background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Stepping-Stones-Background.jpg');
   background-position: center;
 }
 
 .background-container-test {
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../TEST_background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../TEST_background.jpg');
   background-position: center;
 }
 
@@ -151,6 +151,8 @@
   font-weight: bold;
   height: 45px;
   padding: 10px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .play-button:hover {
@@ -164,7 +166,8 @@
   justify-content: center;
 }
 
-.play-button-icon, .source-button-icon {
+.play-button-icon,
+.source-button-icon {
   width: 35px;
   height: 35px;
   margin-left: 10px;
@@ -248,6 +251,8 @@
   font-weight: bold;
   height: 45px;
   padding: 10px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .source-button:hover {

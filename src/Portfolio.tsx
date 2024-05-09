@@ -113,14 +113,14 @@ function Portfolio() {
                 </div>
                 <br />
                 <div className='play-button-container'>
-                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/arcane-echoes-scroll-of-destiny")}>
+                  <a className='play-button' href="https://master-yeet.itch.io/arcane-echoes-scroll-of-destiny" target="_blank">
                     {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
-                  </button>
-                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Arcane-Echoes")}>
+                  </a>
+                  <a className='source-button' href="https://github.com/chrisrobidas/Arcane-Echoes" target="_blank">
                     {t('portfolio.project-source')}
                     <img className='source-button-icon' src="github-logo.png" alt="github" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -176,14 +176,14 @@ function Portfolio() {
                 </div>
                 <br />
                 <div className='play-button-container'>
-                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/test-tigre-en-situation-triche")}>
+                  <a className='play-button' href="https://master-yeet.itch.io/test-tigre-en-situation-triche" target="_blank">
                     {t('portfolio.project-play-in-browser')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
-                  </button>
-                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/T.E.S.T.-Tigre-en-situation-triche")}>
+                  </a>
+                  <a className='source-button' href="https://github.com/chrisrobidas/T.E.S.T.-Tigre-en-situation-triche" target="_blank">
                     {t('portfolio.project-source')}
                     <img className='source-button-icon' src="github-logo.png" alt="github" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -238,14 +238,14 @@ function Portfolio() {
                 </div>
                 <br />
                 <div className='play-button-container'>
-                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/sauve-chouris")}>
+                  <a className='play-button' href="https://master-yeet.itch.io/sauve-chouris" target="_blank">
                     {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
-                  </button>
-                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Sauve-Chouris")}>
+                  </a>
+                  <a className='source-button' href="https://github.com/chrisrobidas/Sauve-Chouris" target="_blank">
                     {t('portfolio.project-source')}
                     <img className='source-button-icon' src="github-logo.png" alt="github" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -300,14 +300,14 @@ function Portfolio() {
                 </div>
                 <br />
                 <div className='play-button-container'>
-                  <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/purrfect-escape")}>
+                  <a className='play-button' href="https://master-yeet.itch.io/purrfect-escape" target="_blank">
                     {t('portfolio.project-play-in-browser')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
-                  </button>
-                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Purrfect-Escape")}>
+                  </a>
+                  <a className='source-button' href="https://github.com/chrisrobidas/Purrfect-Escape" target="_blank">
                     {t('portfolio.project-source')}
                     <img className='source-button-icon' src="github-logo.png" alt="github" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -362,14 +362,14 @@ function Portfolio() {
                 </div>
                 <br />
                 <div className='play-button-container'>
-                  <button className='play-button' onClick={() => window.open("https://hyperguy.itch.io/stepping-stones")}>
+                  <a className='play-button' href="https://hyperguy.itch.io/stepping-stones" target="_blank">
                     {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
-                  </button>
-                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Stepping-Stones")}>
+                  </a>
+                  <a className='source-button' href="https://github.com/chrisrobidas/Stepping-Stones" target="_blank">
                     {t('portfolio.project-source')}
                     <img className='source-button-icon' src="github-logo.png" alt="github" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -432,7 +432,9 @@ function Portfolio() {
                 {t('portfolio.email')}
               </h5>
               <br />
-              <img className='contact-icon-link' src="email-square.png" alt="Email" onClick={() => window.location.assign("mailto:christopher.robidas@outlook.com")} />
+              <a href='mailto:christopher.robidas@outlook.com'>
+                <img className='contact-icon-link' src="email-square.png" alt="Email" />
+              </a>
               <br />
               <br />
               <div>
@@ -444,7 +446,9 @@ function Portfolio() {
                 LinkedIn
               </h5>
               <br />
-              <img className='contact-icon-link' src="linkedin-square.png" alt="LinkedIn" onClick={() => window.open("https://www.linkedin.com/in/christopher-robidas-a661241a2/")} />
+              <a href='https://www.linkedin.com/in/christopher-robidas-a661241a2/' target="_blank">
+                <img className='contact-icon-link' src="linkedin-square.png" alt="LinkedIn" />
+              </a>
               <br />
               <br />
               <div>
