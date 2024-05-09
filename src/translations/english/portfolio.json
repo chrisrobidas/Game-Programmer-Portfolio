@@ -17,6 +17,7 @@
         "project-tasks": "I worked on the following:",
         "project-play": "Play",
         "project-play-in-browser": "Play in browser",
+        "project-source": "Source code",
         "project-arcane-echoes": {
             "summary": "Adventure game in which you must obtain a magical scroll protected by corrupted souls in order to leave an alternate dimension. Made for the Ludum Dare 55 game jam.",
             "task1": "Enemies AI that can patrol, avoid obstacles, have a field of vision and become aggressive if the player passes inside.",

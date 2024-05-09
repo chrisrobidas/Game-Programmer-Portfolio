@@ -117,6 +117,10 @@ function Portfolio() {
                     {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
                   </button>
+                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Arcane-Echoes")}>
+                    {t('portfolio.project-source')}
+                    <img className='source-button-icon' src="github-logo.png" alt="github" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -176,6 +180,10 @@ function Portfolio() {
                     {t('portfolio.project-play-in-browser')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
                   </button>
+                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/T.E.S.T.-Tigre-en-situation-triche")}>
+                    {t('portfolio.project-source')}
+                    <img className='source-button-icon' src="github-logo.png" alt="github" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -233,6 +241,10 @@ function Portfolio() {
                   <button className='play-button' onClick={() => window.open("https://master-yeet.itch.io/sauve-chouris")}>
                     {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Sauve-Chouris")}>
+                    {t('portfolio.project-source')}
+                    <img className='source-button-icon' src="github-logo.png" alt="github" />
                   </button>
                 </div>
               </div>
@@ -292,6 +304,10 @@ function Portfolio() {
                     {t('portfolio.project-play-in-browser')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
                   </button>
+                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Purrfect-Escape")}>
+                    {t('portfolio.project-source')}
+                    <img className='source-button-icon' src="github-logo.png" alt="github" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -349,6 +365,10 @@ function Portfolio() {
                   <button className='play-button' onClick={() => window.open("https://hyperguy.itch.io/stepping-stones")}>
                     {t('portfolio.project-play')}
                     <img className='play-button-icon' src="itchio.png" alt="itch.io" />
+                  </button>
+                  <button className='source-button' onClick={() => window.open("https://github.com/chrisrobidas/Stepping-Stones")}>
+                    {t('portfolio.project-source')}
+                    <img className='source-button-icon' src="github-logo.png" alt="github" />
                   </button>
                 </div>
               </div>

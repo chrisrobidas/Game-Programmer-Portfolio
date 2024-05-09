@@ -17,6 +17,7 @@
         "project-tasks": "J'ai travaillé sur ce qui suit:",
         "project-play": "Jouer",
         "project-play-in-browser": "Jouer en ligne",
+        "project-source": "Code source",
         "project-arcane-echoes": {
             "summary": "Jeu d'aventure dans lequel vous devez obtenir un parchemin magique protégé par des âmes corrompues afin de quitter une dimension alternative. Réalisé pour le game jam du Ludum Dare 55.",
             "task1": "AI d'ennemis pouvant patrouiller, éviter des obstacles, ont un champ de vision et qui deviennent agressifs si le joueur passe à l'intérieur.",
