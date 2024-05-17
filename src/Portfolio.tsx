@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ModalImage from "react-modal-image";
 import './Portfolio.css';
 
 function Portfolio() {
@@ -74,7 +75,7 @@ function Portfolio() {
                   <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[4]} type="video/mp4" />
                   </video>}
-                {!isVideo[4] && <img className='portfolio-main-media' src={imgSrc[4]} alt="Main media" />}
+                {!isVideo[4] && <ModalImage className='portfolio-main-media' small={imgSrc[4]} large={imgSrc[4]} />}
                 <div className='portfolio-medias'>
                   <img className={'portfolio-media' + (selectedMedia[4] == 0 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_1.jpg" alt="Arcane Echoes 1" onClick={() => SetMedia(4, 0, 'Arcane_Echoes.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[4] == 1 ? ' portfolio-media-selected' : '')} src="Arcane_Echoes_2.jpg" alt="Arcane Echoes 2" onClick={() => SetMedia(4, 1, 'Arcane_Echoes_2.jpg')} />
@@ -137,7 +138,7 @@ function Portfolio() {
                   <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[0]} type="video/mp4" />
                   </video>}
-                {!isVideo[0] && <img className='portfolio-main-media' src={imgSrc[0]} alt="Main media" />}
+                {!isVideo[0] && <ModalImage className='portfolio-main-media' small={imgSrc[0]} large={imgSrc[0]} />}
                 <div className='portfolio-medias'>
                   <img className={'portfolio-media' + (selectedMedia[0] == 0 ? ' portfolio-media-selected' : '')} src="TEST-1.jpg" alt="TEST 1" onClick={() => SetMedia(0, 0, 'TEST_Tigre_en_situation_triche.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[0] == 1 ? ' portfolio-media-selected' : '')} src="TEST-2.jpg" alt="TEST 2" onClick={() => SetMedia(0, 1, 'TEST-2.jpg')} />
@@ -200,7 +201,7 @@ function Portfolio() {
                   <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[1]} type="video/mp4" />
                   </video>}
-                {!isVideo[1] && <img className='portfolio-main-media' src={imgSrc[1]} alt="Main media" />}
+                {!isVideo[1] && <ModalImage className='portfolio-main-media' small={imgSrc[1]} large={imgSrc[1]} />}
                 <div className='portfolio-medias'>
                   <img className={'portfolio-media' + (selectedMedia[1] == 0 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-1.jpg" alt="Sauve-Chouris 1" onClick={() => SetMedia(1, 0, 'Sauve-Chouris.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[1] == 1 ? ' portfolio-media-selected' : '')} src="Sauve-Chouris-2.jpg" alt="Sauve-Chouris 2" onClick={() => SetMedia(1, 1, 'Sauve-Chouris-2.jpg')} />
@@ -262,7 +263,7 @@ function Portfolio() {
                   <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[2]} type="video/mp4" />
                   </video>}
-                {!isVideo[2] && <img className='portfolio-main-media' src={imgSrc[2]} alt="Main media" />}
+                {!isVideo[2] && <ModalImage className='portfolio-main-media' small={imgSrc[2]} large={imgSrc[2]} />}
                 <div className='portfolio-medias'>
                   <img className={'portfolio-media' + (selectedMedia[2] == 0 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-1.jpg" alt="Purrfect Escape 1" onClick={() => SetMedia(2, 0, 'Purrfect-Escape.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[2] == 1 ? ' portfolio-media-selected' : '')} src="Purrfect-Escape-2.jpg" alt="Purrfect Escape 2" onClick={() => SetMedia(2, 1, 'Purrfect-Escape-2.jpg')} />
@@ -324,7 +325,7 @@ function Portfolio() {
                   <video className='portfolio-main-media' autoPlay muted loop playsInline controls>
                     <source src={videoSrc[3]} type="video/mp4" />
                   </video>}
-                {!isVideo[3] && <img className='portfolio-main-media' src={imgSrc[3]} alt="Main media" />}
+                {!isVideo[3] && <ModalImage className='portfolio-main-media' small={imgSrc[3]} large={imgSrc[3]} />}
                 <div className='portfolio-medias'>
                   <img className={'portfolio-media' + (selectedMedia[3] == 0 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-1.jpg" alt="Stepping Stones 1" onClick={() => SetMedia(3, 0, 'Stepping_Stones.mp4', true, true)} />
                   <img className={'portfolio-media' + (selectedMedia[3] == 1 ? ' portfolio-media-selected' : '')} src="Stepping-Stones-2.jpg" alt="Stepping Stones 2" onClick={() => SetMedia(3, 1, 'Stepping-Stones-2.jpg')} />
