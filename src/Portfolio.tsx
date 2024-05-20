@@ -8,7 +8,7 @@ function Portfolio() {
 
   const [selectedMedia, setSelectedMedia] = useState<number[]>([0, 0, 0, 0, 0])
   const [imgSrc, setImgSrc] = useState<string[]>(['TEST-2.jpg', 'Sauve-Chouris-2.jpg', 'Purrfect-Escape-2.jpg', 'Stepping-Stones-2.jpg', 'Arcane_Echoes_2.jpg'])
-  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4', 'Arcane_Echoes.mp4'])
+  const [videoSrc, setVideoSrc] = useState<string[]>(['TEST_Tigre_en_situation_triche.mp4', 'Sauve-Chouris.mp4', 'Purrfect-Escape.mp4', 'Stepping_Stones.mp4', 'TEST_Tigre_en_situation_triche.mp4'])
   const [isVideo, setIsVideo] = useState<boolean[]>([true, true, true, true, true])
   const [enableControls, setEnableControls] = useState<boolean[]>([true, true, true, true, true])
 
